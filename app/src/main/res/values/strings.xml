@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Umpire Buddy 1.0</string>
+    <string name="ball_popup_title_default">Walk!</string>
+    <string name="ball_popup_text_default">Four balls, player walks!</string>
+    <string name="strike_popup_title_default">Out!</string>
+    <string name="strike_popup_text_default">Four strikes, you\'re out!</string>
 </resources>

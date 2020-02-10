@@ -1,8 +1,10 @@
 package com.example.umpirebuddy10
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+        val exitStrike = findViewById<ImageView>(R.id.exitStrike)
+        val exitWalk = findViewById<ImageView>(R.id.exitWalk)
         val ballPopUpBtn = findViewById<Button>(R.id.ballPopUpBtn)
         val strikePopUpBtn = findViewById<Button>(R.id.strikePopUpBtn)
         val ballButton = findViewById<Button>(R.id.ballButton)
@@ -25,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         var strikeCount = 0;
 
         ballButton.setOnClickListener {
+            if (ballCount == 3){
+
+            }
             ballCount += 1
             ballsCountView.text = ballCount.toString()
         }
