@@ -9,10 +9,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val ballPopUpBtn = findViewById<Button>(R.id.ballPopUpBtn)
+        val strikePopUpBtn = findViewById<Button>(R.id.strikePopUpBtn)
         val ballButton = findViewById<Button>(R.id.ballButton)
         val strikeButton = findViewById<Button>(R.id.strikeButton)
         val ballsCountView = findViewById<TextView>(R.id.ballsCountView)

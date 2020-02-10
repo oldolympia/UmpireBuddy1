@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/colorPrimary"
+    tools:context="com.example.umpirebuddy10.MainActivity">
 
     <Button
         android:id="@+id/exitButton"
@@ -107,4 +108,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/ballPopUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ball!"/>
+
+        <Button
+            android:id="@+id/strikePopUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strike Out!"/>
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>
